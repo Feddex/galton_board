@@ -3,8 +3,8 @@
 To compile the code run the following commands:
 
 ```bash
-cmake-S. -B build
-cmake —build build
+cmake -S . -B build
+cmake --build build
 ./build/peg
 ```
 
@@ -40,7 +40,7 @@ The last row displayed before the end of the program represent the final distrib
 
 -   Set kinetic energy:
     In `particle.cpp`, in `velocity_shock_changer`, in line `34`, change the coefficients set to `1` and `0.5` by default before the components of the `Bbase_final_velocity_vector_component`.
-    **WARNING: DO NOT CHANGE THE MINUS IN FRONT OF THE SECOND COMPONENT** (it is necessarily to run the program correctly)
+    **WARNING: DO NOT CHANGE THE MINUS IN FRONT OF THE SECOND COMPONENT** (it is necessary to run the program correctly)
     (It would be interesting to conserve the kinetic energy on the $x$ component and change it on $y$ one).
 
 Keep attention to all the warnings previously told!
